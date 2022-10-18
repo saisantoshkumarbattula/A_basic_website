@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block body %}
+<style>
+    p{
+       height: 270px;
+         position: relative;
+    }
+    h3{text-align: center; color: white;}
+    h5{text-align: center; color: white;}
+        body {
+          background-image: url('/static/img/second.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+</style>
+    <p >
+        <h3>Thank you for using our website</h3>
+        <h5>Credits: Santhu <br>
+        <small>Location: Hyderabad<small></h5>
+    </p>
+{% endblock body %}

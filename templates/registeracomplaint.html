@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}register a complaint{% endblock title %}
+
+{% block body %}
+<style>
+    p {
+        height: 270px;
+        position: relative;
+    }
+
+    h3 {
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    body {
+        background-image: url('/static/img/4.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<p>
+<h3>We are really sorry for the inconvenience you are facing please contact us</h3>
+<div style="text-align: center;">
+    <a style=" text-transform: uppercase;
+        text-decoration: none;
+        background: grey;
+        color: white;
+        padding: 1rem 4rem;
+        border-radius: 4rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.05rem;
+        " href="/contact">contact</a>
+</div>
+</p>
+{% endblock body %}

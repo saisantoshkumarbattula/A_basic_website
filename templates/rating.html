@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Rating{% endblock title %}
+
+{% block body %}
+<style>
+  h3 {
+    color: #33333D;
+  }
+
+  body {
+    background-image: url('/static/img/13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  {% comment %} input.transparent-input {
+    border: 10px;
+  }
+
+  .transparent-input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px;
+  }
+ 
+  input.transparent-input {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 10px;
+  } {% endcomment %}
+  
+</style>
+<form method="post" action="\rating">
+  {% csrf_token %}
+  <p>
+  <div class="mb-3" style="text-align: center; margin-top: 280px; margin-left: 634px; margin-right: 634px;">
+    <label for="rating" class="form-label">
+      <h3>Please give us Rating</h3>
+    </label>
+    <input type="text" style="padding-bottom: 5px; margin-bottom: 3px" class="form-control transparent-input" id="name"
+      name="name" placeholder="Enter your name">
+    <input style="padding-top: 5px;" type="text" class="form-control transparent-input" id="Rating" name="rating"
+      placeholder="out of 5">
+  </div>
+  <button class="btn btn-primary" style="margin-left: 725px; margin-right: 634px;" type="submit">Submit</button>
+  </p>
+</form>
+{% endblock body %}
